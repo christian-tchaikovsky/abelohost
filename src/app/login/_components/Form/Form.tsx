@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { isAxiosError } from "axios";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -21,8 +22,6 @@ import type { Color as ButtonColors } from "@/components/Button/Button";
 import { VALIDATION_SCHEMA } from "./_constants/validation";
 
 import styles from "./Form.module.scss";
-
-import { isAxiosError } from "axios";
 
 export const Form = () => {
   const router = useRouter();
