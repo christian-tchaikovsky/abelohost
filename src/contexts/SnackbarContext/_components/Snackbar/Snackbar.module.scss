@@ -1,0 +1,18 @@
+@use "@/styles/mixins" as *;
+
+$types: "info", "success", "danger", "warning";
+
+.snackbar {
+  cursor: pointer;
+  min-width: 240px;
+  max-width: 440px;
+  padding: 20px 28px;
+  white-space: pre-line;
+  border-radius: var(--radius-s);
+
+  @each $type in $types {
+    &.#{$type} {
+      background-color: var(--background-#{$type});
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.icon {
+  &.l {
+    width: 28px;
+    height: 28px;
+  }
+
+  &.m {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.s {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.color-primary {
+    * {
+      fill: var(--text-primary);
+    }
+  }
+
+  &.color-secondary {
+    * {
+      fill: var(--text-secondary);
+    }
+  }
+
+  &.color-danger {
+    * {
+      fill: var(--text-danger);
+    }
+  }
+}

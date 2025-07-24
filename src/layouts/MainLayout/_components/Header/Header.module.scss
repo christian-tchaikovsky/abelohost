@@ -1,0 +1,19 @@
+@use "@/styles/mixins" as *;
+
+.container {
+  background-color: var(--background-primary);
+}
+
+.header {
+  height: 100px;
+}
+
+.logo {
+  @include mobile-max {
+    display: none;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

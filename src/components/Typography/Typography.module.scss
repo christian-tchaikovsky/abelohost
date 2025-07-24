@@ -1,0 +1,25 @@
+.typography {
+  &.size-l {
+    font-size: 24px;
+  }
+
+  &.size-m {
+    font-size: 16px;
+  }
+
+  &.size-s {
+    font-size: 14px;
+  }
+
+  &.color-primary {
+    color: var(--text-primary);
+  }
+
+  &.color-secondary {
+    color: var(--text-secondary);
+  }
+
+  &.color-danger {
+    color: var(--text-danger)
+  }
+}

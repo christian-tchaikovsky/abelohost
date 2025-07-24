@@ -1,0 +1,14 @@
+@use "@/styles/mixins" as *;
+
+.container {
+  background-color: var(--background-primary);
+
+  .footer {
+    padding: 20px 0;
+
+    @include mobile-max {
+      align-items: flex-start !important;
+      flex-direction: column;
+    }
+  }
+}
