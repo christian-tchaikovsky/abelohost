@@ -12,6 +12,10 @@ import styles from "./Footer.module.scss";
 export const Footer = () => {
   const user = useUserContext();
 
+  const year = new Date()
+    .getUTCFullYear() // Avoid hydration warning
+    .toString();
+
   return (
     <Container
       as="footer"
@@ -24,7 +28,7 @@ export const Footer = () => {
         <Typography color="secondary">
           ©
           {" "}
-          {new Date().getFullYear()}
+          <time dateTime={year}>{year}</time>
           {" "}
           AbeloHost. All rights reserved.
         </Typography>

@@ -11,6 +11,7 @@ export const PRODUCTS = {
       url: "/products",
       params: {
         limit: 12,
+        delay: 3000,
       },
     });
   },
